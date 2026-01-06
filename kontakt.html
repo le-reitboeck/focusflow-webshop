@@ -2,7 +2,7 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <title>FocusFlow - Produktiv arbeiten</title>
+        <title>FocusFlow - Kontakt</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -14,16 +14,33 @@
                     <li><a href="index.html">Start</a></li>
                     <li><a href="produkt.html">Produkt</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a class="active" href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="container">
+            <h1>Kontakt</h1>
 
+            <p>FocusFlow GmbH<br>
+                Musterstraße 1<br>
+                1010 Wien</p>
+
+            <form>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email">
+
+                <label for="msg">Nachricht</label>
+                <textarea id="msg"></textarea>
+
+                <button type="submit">Absenden</button>
+            </form>
+
+            <p><em>Formular dient nur Demonstrationszwecken.</em></p>
         </main>
         <footer>
             <a href="barrierefreiheit.html">Barrierefreiheit</a>
             <a href="datenschutz.html">Datenschutz</a>
+            <a href="lizenz.html">Lizenz</a>
             <a href="impressum.html">Impressum</a>
         </footer>
     </body>

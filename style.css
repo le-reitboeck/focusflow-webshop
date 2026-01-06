@@ -1,0 +1,98 @@
+/* FARBEN::
+main: #2563eb
+main (hover): #1e40af
+background: #f8fafc
+area/card: #ffffff
+main text: #0f172a
+secondary text: #475569
+border: #e2e8f0
+*/
+
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8fafc;
+  color: #0f172a;
+  
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0; 
+  margin-bottom: 2rem 1.5rem;  
+}
+
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 4rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+a {
+  color: #005fcc;
+}
+
+/* NAV */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #0f172a;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+nav ul li a.active {
+  background-color: green;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: darkgrey;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
+
+/* TEXT */
+
+/* BUTTONS */
+
+/* FORMS */
+
+/* ACCESSIBILITY */
+
+/* SKIP LINK */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  background: black;
+  color: white;
+  padding: 8px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
