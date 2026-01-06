@@ -8,6 +8,30 @@ secondary text: #475569
 border: #e2e8f0
 */
 
+/* ===== LOGO ===== */
+.logo a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+
+/* ===== CTA BUTTON ===== */
+.button-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 10px;  
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background-color: #1e40af;
+}
 
 body {
   margin: 0;
@@ -63,36 +87,86 @@ nav a {
   padding: 14px 16px;
 }
 
-nav ul li a.active {
+nav a.active {
   background-color: green;
 }
 
-nav ul li a:hover:not(.active) {
+nav a:hover:not(.active),
+nav a:focus {
   background-color: darkgrey;
 }
 
-a:focus, button:focus, input:focus, textarea:focus {
-  outline: 3px solid #005fcc;
-  outline-offset: 2px;
-}
 
 /* TEXT */
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+p {
+  max-width: 65ch;
+  color: #475569;
+}
 
 /* BUTTONS */
+button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
 
 /* FORMS */
+label {
+  display: block;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  font-size: 1rem;
+}
+
 
 /* ACCESSIBILITY */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
 
 /* SKIP LINK */
 .skip-link {
   position: absolute;
   top: -40px;
-  background: black;
-  color: white;
-  padding: 8px;
+  left: 1rem;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
 }
 
 .skip-link:focus {
-  top: 0;
+  top: 1rem;
 }
