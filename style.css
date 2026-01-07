@@ -1,6 +1,4 @@
-/* =======================================================
-   CSS VARIABLES / DESIGN TOKENS
-======================================================= */
+/* css variablen und design marken */
 :root {
   /* Colors */
   --color-primary: #2563eb;
@@ -42,9 +40,7 @@
   --transition-base: 0.3s ease;
 }
 
-/* =======================================================
-   GLOBAL RESET
-======================================================= */
+/* global reset */
 *,
 *::before,
 *::after {
@@ -67,16 +63,14 @@ body {
   padding-top: 0;
 }
 
-/* =======================================================
-   TYPOGRAPHY
-======================================================= */
+/* text and headlines */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--color-text);
+  color: var(--color-primary);
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
@@ -112,18 +106,14 @@ a:focus {
   color: var(--color-primary-hover);
 }
 
-/* =======================================================
-   LAYOUT
-======================================================= */
+/* layout container*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--spacing-xl) var(--spacing-md);
 }
 
-/* =======================================================
-   HEADER
-======================================================= */
+/* header */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -180,9 +170,7 @@ a:focus {
   background-color: var(--color-primary-hover);
 }
 
-/* =======================================================
-   FOOTER
-======================================================= */
+/* footer */
 .site-footer {
   background-color: var(--color-footer-bg);
   color: var(--color-surface);
@@ -202,9 +190,7 @@ a:focus {
   color: var(--color-surface);
 }
 
-/* =======================================================
-   CARDS / SECTIONS
-======================================================= */
+/* cards/sections*/
 .card {
   background-color: var(--color-surface);
   padding: var(--spacing-lg);
@@ -213,9 +199,7 @@ a:focus {
   box-shadow: var(--shadow-sm);
 }
 
-/* =======================================================
-   BUTTONS
-======================================================= */
+/* buttons */
 button,
 .btn-primary,
 .btn-secondary {
@@ -251,9 +235,7 @@ button,
   background-color: #cbd5e1;
 }
 
-/* =======================================================
-   HERO SECTION
-======================================================= */
+/* top (hero) section landing page*/
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -297,9 +279,7 @@ button,
   border-radius: var(--border-radius-lg);
 }
 
-/* =======================================================
-   FEATURES GRID
-======================================================= */
+/* feature grid landing page*/
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -337,9 +317,7 @@ button,
   font-size: 0.95rem;
 }
 
-/* =======================================================
-   CTA SECTION
-======================================================= */
+/* blue section landing page*/
 .cta {
   text-align: center;
   padding: var(--spacing-xl) var(--spacing-lg);
@@ -364,9 +342,7 @@ button,
   background-color: var(--color-border);
 }
 
-/* =======================================================
-   FORMS / INPUTS
-======================================================= */
+/* inputs */
 label {
   display: block;
   margin-top: var(--spacing-md);
@@ -394,9 +370,7 @@ select:hover {
   border-color: var(--color-primary);
 }
 
-/* =======================================================
-   LISTS
-======================================================= */
+/* listen */
 ul,
 ol {
   margin-left: var(--spacing-md);
@@ -407,9 +381,7 @@ li {
   margin-bottom: var(--spacing-xs);
 }
 
-/* =======================================================
-   ACCESSIBILITY
-======================================================= */
+/* accessibility zeug*/
 .skip-link {
   position: absolute;
   top: -40px;
@@ -435,9 +407,7 @@ select:focus {
   outline-offset: 2px;
 }
 
-/* =======================================================
-   COOKIE BANNER
-======================================================= */
+/* cookie banner*/
 .cookie-banner {
   position: fixed;
   bottom: var(--spacing-md);
@@ -479,9 +449,8 @@ select:focus {
   flex-wrap: wrap;
 }
 
-/* =======================================================
-   RESPONSIVE DESIGN
-======================================================= */
+/* interaktive parts*/ 
+
 @media (max-width: 1024px) {
   .container {
     padding: var(--spacing-lg) var(--spacing-sm);

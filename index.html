@@ -14,7 +14,6 @@
 
 <body>
 
-    <!-- Header -->
     <header class="site-header">
         <div class="logo">
             <a href="index.html">
@@ -31,9 +30,7 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main id="main-content">
-        <!-- Hero Section -->
         <section class="hero container">
             <div class="hero-text">
                 <h1>FocusFlow - Produktiv arbeiten, klar strukturiert</h1>
@@ -51,7 +48,6 @@
             </div>
         </section>
 
-        <!-- Features Grid -->
         <section class="container">
             <h2>Unsere Kernfunktionen</h2>
             
@@ -80,7 +76,6 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="container">
             <div class="cta">
                 <h2>Bereit loszulegen?</h2>
@@ -89,7 +84,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <p>&copy; 2026 FocusFlow. Alle Rechte vorbehalten.</p>
@@ -106,7 +100,6 @@
         </div>
     </footer>
 
-    <!-- Cookie Banner -->
     <div class="cookie-banner" id="cookieBanner">
         <div class="cookie-content">
             <h2>🍪 Cookies</h2>
@@ -115,6 +108,7 @@
                 Weitere Informationen finden Sie in unserer 
                 <a href="datenschutz.html">Datenschutzerklärung</a>.
             </p>
+            <p>(Dieser Banner ist komplett gemockt und hat absolut keine Auswirkungen)</p>
             <div class="cookie-buttons">
                 <button class="btn-primary" onclick="acceptCookies()">Alle akzeptieren</button>
                 <button class="btn-secondary" onclick="declineCookies()">Nur notwendige</button>
@@ -123,28 +117,25 @@
     </div>
 
     <script>
-        // Cookie Banner Logic
         function showCookieBanner() {
             const banner = document.getElementById('cookieBanner');
-            const cookieConsent = localStorage.getItem('cookieConsent');
+            const cookieConsent = sessionStorage.getItem('cookieConsent');
             
             if (!cookieConsent) {
-                banner.style.display = 'block';
+                banner.classList.add('show');
             }
         }
 
         function acceptCookies() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            document.getElementById('cookieBanner').style.display = 'none';
+            sessionStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieBanner').classList.remove('show');
         }
 
         function declineCookies() {
-            localStorage.setItem('cookieConsent', 'declined');
-            document.getElementById('cookieBanner').style.display = 'none';
+            sessionStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieBanner').classList.remove('show');
         }
-
-        // Show banner on page load
-        window.addEventListener('load', showCookieBanner);
+        window.addEventListener('DOMContentLoaded', showCookieBanner);
     </script>
 </body>
 </html>
