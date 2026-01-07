@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <title>FocusFlow - Produktiv arbeiten</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <header>
-            <nav aria-label="Hauptnavigation">
-                <ul>
-                    <li><a class ="active" href="index.html">Start</a></li>
-                    <li><a href="produkt.html">Produkt</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a class="starten" href="produkt.html">Jetzt starten</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <title>FocusFlow - Produktiv arbeiten</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <main class="container">
-            <h1>FocusFlow</h1>
-            <p>Eine smarte Fokus-App die deine Aufgaben für dich plant.</p>
-        </main>
+<body>
+    <header>
+        <nav aria-label="Hauptnavigation">
+            <ul>
+                <li><a class="active" href="index.html">Start</a></li>
+                <li><a href="produkt.html">Produkt</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a class="starten" href="produkt.html">Jetzt starten</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <footer>
-            <a href="barrierefreiheit.html">Barrierefreiheitserklärung</a>
-            <a href="datenschutz.html">Datenschutz</a>
-            <a href="lizenz.html">Lizenz</a>
-            <a href="impressum.html">Impressum</a>
-        </footer>
-    </body>
+    <main class="container">
+        <!-- HERO SECTION -->
+        <section class="hero card">
+            <div class="hero-text">
+                <h1>FocusFlow – Produktiv arbeiten, klar strukturiert</h1>
+                <p>
+                    Organisiere Aufgaben, Projekte und Arbeitszeiten in einer intuitiven
+                    Web-App. Für Studierende, Freelancer und Teams.
+                </p>
+                <div class="hero-buttons">
+                    <a href="produkt.html" class="btn-primary">Jetzt starten</a>
+                    <a href="about.html" class="btn-secondary">Mehr erfahren</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/icon-calendar.svg" alt="FocusFlow Dashboard Ansicht">
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section class="features card">
+            <h2>Unsere Kernfunktionen</h2>
+            <div class="feature-grid">
+
+                <div class="feature">
+                    <img src="images/icon-task.svg" alt="Aufgaben Icon">
+                    <h3>Aufgabenmanagement</h3>
+                    <p>Alle Aufgaben übersichtlich organisieren, priorisieren und nachverfolgen.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="images/icon-project.svg" alt="Projekt Icon">
+                    <h3>Projektübersicht</h3>
+                    <p>Projekte bündeln und Fortschritte klar visualisieren.</p>
+                </div>
+
+                <div class="feature">
+                    <img src="images/icon-time.svg" alt="Zeit Icon">
+                    <h3>Zeitplanung & Fokus</h3>
+                    <p>Fokussierte Arbeitsblöcke erstellen und Ablenkungen reduzieren.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta card">
+            <h2>Jetzt FocusFlow ausprobieren</h2>
+            <p>Starte direkt mit unserem kostenlosen Demo-Account und erlebe produktives Arbeiten.</p>
+            <a href="produkt.html" class="btn-primary">Demo starten</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="barrierefreiheit.html">Barrierefreiheitserklärung</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="lizenz.html">Lizenz</a>
+        <a href="impressum.html">Impressum</a>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title"
+        aria-describedby="cookie-text">
+        <div class="cookie-content">
+            <h2 id="cookie-title">Cookies & Datenschutz</h2>
+            <p id="cookie-text">
+                Diese Website verwendet Cookies, um grundlegende Funktionen bereitzustellen.
+                Analyse- und Marketing-Cookies werden nicht eingesetzt.
+                Weitere Informationen findest du in unserer
+                <a href="datenschutz.html">Datenschutzerklärung</a>.
+            </p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn-primary">Akzeptieren</button>
+                <button id="decline-cookies" class="btn-secondary">Ablehnen</button>
+            </div>
+        </div>
+    </div>
+    <script src="cookies.js"></script>
+
+</body>
+
 </html>
