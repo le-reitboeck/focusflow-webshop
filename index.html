@@ -3,62 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Willkommen bei FokusFlow - der innovativen Planungs-Software.">
     <title>FocusFlow - Produktiv arbeiten</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/10450/10450953.png" alt="Raketen Logo" style="height: 40px; width: auto; vertical-align: middle; margin-right: 8px;">
+                FocusFlow
+            </a>
+        </div>
         <nav aria-label="Hauptnavigation">
-            <ul>
-                <li><a class="active" href="index.html">Start</a></li>
-                <li><a href="produkt.html">Produkt</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a class="starten" href="produkt.html">Jetzt starten</a></li>
-            </ul>
+            <a href="index.html" class="active">Start</a>
+            <a href="produkt.html">Produkt</a>
+            <a href="about.html">Über uns</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="anmelden.html" class="starten">Jetzt starten</a>
         </nav>
     </header>
 
-    <main class="container">
-        <!-- HERO SECTION -->
-        <section class="hero card">
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero container">
             <div class="hero-text">
-                <h1>FocusFlow – Produktiv arbeiten, klar strukturiert</h1>
+                <h1>FocusFlow - Produktiv arbeiten, klar strukturiert</h1>
                 <p>
-                    Organisiere Aufgaben, Projekte und Arbeitszeiten in einer intuitiven
-                    Web-App. Für Studierende, Freelancer und Teams.
+                    Organisiere Aufgaben, Projekte und Fokus-Zeitblöcke in einer intuitiven Web-App. Für Studierende, Freelancer und kleine Teams.
                 </p>
                 <div class="hero-buttons">
-                    <a href="produkt.html" class="btn-primary">Jetzt starten</a>
-                    <a href="about.html" class="btn-secondary">Mehr erfahren</a>
+                    <a href="anmelden.html" class="btn-primary">Kostenlos starten</a>
+                    <a href="produkt.html" class="btn-secondary">Mehr erfahren</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/icon-calendar.svg" alt="FocusFlow Dashboard Ansicht">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" 
+                     alt="Team arbeitet zusammen an innovativen Projekten">
             </div>
         </section>
 
-        <!-- FEATURES SECTION -->
-        <section class="features card">
+        <!-- Features Grid -->
+        <section class="container">
             <h2>Unsere Kernfunktionen</h2>
+            
             <div class="feature-grid">
-
                 <div class="feature">
-                    <img src="images/icon-task.svg" alt="Aufgaben Icon">
+                    <img src="./images/icon-task.svg" 
+                         alt="Aufgaben Icon">
                     <h3>Aufgabenmanagement</h3>
-                    <p>Alle Aufgaben übersichtlich organisieren, priorisieren und nachverfolgen.</p>
+                    <p>Aufgaben übersichtlich organisieren, priorisieren und nachverfolgen. Alles an einem Ort.</p>
                 </div>
-
+                
                 <div class="feature">
-                    <img src="images/icon-project.svg" alt="Projekt Icon">
+                    <img src="./images/icon-project.svg" 
+                         alt="Projekt Icon">
                     <h3>Projektübersicht</h3>
                     <p>Projekte bündeln und Fortschritte klar visualisieren.</p>
                 </div>
-
+                
                 <div class="feature">
-                    <img src="images/icon-time.svg" alt="Zeit Icon">
+                    <img src="./images/icon-time.svg" 
+                         alt="Zeituhr Icon">
                     <h3>Zeitplanung & Fokus</h3>
                     <p>Fokussierte Arbeitsblöcke erstellen und Ablenkungen reduzieren.</p>
                 </div>
@@ -66,39 +80,70 @@
             </div>
         </section>
 
-        <!-- CTA SECTION -->
-        <section class="cta card">
-            <h2>Jetzt FocusFlow ausprobieren</h2>
-            <p>Starte direkt mit unserem kostenlosen Demo-Account und erlebe produktives Arbeiten.</p>
-            <a href="produkt.html" class="btn-primary">Demo starten</a>
+        <!-- CTA Section -->
+        <section class="container">
+            <div class="cta">
+                <h2>Bereit loszulegen?</h2>
+                <p>
+                    Starten Sie noch heute Ihre kostenlose Testphase und überzeugen Sie sich selbst.
+                </p>
+                <a href="anmelden.html" class="btn-primary">Jetzt kostenlos testen</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <a href="barrierefreiheit.html">Barrierefreiheitserklärung</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="lizenz.html">Lizenz</a>
-        <a href="impressum.html">Impressum</a>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 FocusFlow. Alle Rechte vorbehalten.</p>
+            <p>
+                <a href="barrierefreiheit.html">Barrierefreiheit</a> | 
+                <a href="datenschutz.html">Datenschutz</a> | 
+                <a href="lizenz.html">Lizenz</a> | 
+                <a href="impressum.html">Impressum</a>
+            </p>
+        </div>
     </footer>
 
-    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title"
-        aria-describedby="cookie-text">
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
         <div class="cookie-content">
-            <h2 id="cookie-title">Cookies & Datenschutz</h2>
-            <p id="cookie-text">
-                Diese Website verwendet Cookies, um grundlegende Funktionen bereitzustellen.
-                Analyse- und Marketing-Cookies werden nicht eingesetzt.
-                Weitere Informationen findest du in unserer
+            <h2>🍪 Cookies</h2>
+            <p>
+                Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. 
+                Weitere Informationen finden Sie in unserer 
                 <a href="datenschutz.html">Datenschutzerklärung</a>.
             </p>
             <div class="cookie-buttons">
-                <button id="accept-cookies" class="btn-primary">Akzeptieren</button>
-                <button id="decline-cookies" class="btn-secondary">Ablehnen</button>
+                <button class="btn-primary" onclick="acceptCookies()">Alle akzeptieren</button>
+                <button class="btn-secondary" onclick="declineCookies()">Nur notwendige</button>
             </div>
         </div>
     </div>
-    <script src="./cookies.js"></script>
 
+    <script>
+        // Cookie Banner Logic
+        function showCookieBanner() {
+            const banner = document.getElementById('cookieBanner');
+            const cookieConsent = localStorage.getItem('cookieConsent');
+            
+            if (!cookieConsent) {
+                banner.style.display = 'block';
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+
+        // Show banner on page load
+        window.addEventListener('load', showCookieBanner);
+    </script>
 </body>
-
 </html>
