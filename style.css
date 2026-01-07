@@ -519,9 +519,10 @@ input:focus, textarea:focus, select:focus {
     font-size: 1.1rem;
   }
 }
-/* =======================================================
-   COOKIE BANNER
-======================================================= */
+
+
+/* COOKIE BANNER */
+
 .cookie-banner {
   position: fixed;
   bottom: 1.5rem;
